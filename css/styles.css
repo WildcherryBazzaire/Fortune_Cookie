@@ -1,0 +1,84 @@
+/* {
+	border: 1px solid red;
+} */
+
+@keyframes Fade {
+	0% {color: rgba(255,255,255,1)}
+	50% {color:rgba(0,0,0,0)}
+	100% {color:rgba(255,255,255,1)}
+}
+
+body {
+	background-color: black;
+}
+
+body::after {
+	background-image: url(../images/fortune-cookie.png);
+}
+
+p {
+	color:white;
+}
+
+#resets {
+	display: inline-block;
+	position: absolute;
+	font-size: 1.8em;
+	width:auto
+}
+
+#fortuneContainer {
+	display: table;
+	position: relative;
+	font-size: 3em;
+	max-width: 8em;
+	height: 4em;
+	margin: 2% auto 0 auto;
+	text-align: center;
+}
+
+#fortuneContainer > p {
+	transition: color 2s;
+}
+
+#buttonContainer {
+	display: table;
+	margin: 0 auto;
+	width: 31em;
+	height: 6em;
+}
+
+#buttonContainer > button {
+	display: inline-block;
+	background-color:black;
+	width: 45%;
+	height: 100%;
+	border: 0.1em solid white;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+}
+
+#Unravel {
+	margin-right: 10%; /* gives the button gap */ 
+}
+
+#previousContainer {
+	display: flex;
+	flex-direction: column;
+	margin: 2px auto 2px auto;
+	max-width: 30%;
+	max-height: 15em;
+	min-height: 2em;
+	overflow: auto;
+	text-align: center;
+}
+
+#previousContainer > p {
+	border: 0.1em solid white;
+	max-height: 95%;
+	padding: 0.01em 0em;
+	margin: 5px 0;
+	font-size: 200%;
+	text-align: center;
+}
